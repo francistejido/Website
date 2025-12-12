@@ -8,76 +8,166 @@
   <link rel="icon" type="image/x-icon" href="./images/favicon.ico.png">
 </head>
 <body>
-  <header class="site-banner">
-    <div class="banner-content">
-      <img src="./images/logo.png" alt="Care Connect Logo" class="logo">
-      <div class="header-titles">
-      <h2>Care Connect</h2>
-      <h3>Care Without Borders</h3>
-      </div>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="services.html">Services</a>
-        <a href="resources.html">Resources</a>
-        <a href="contact.html">Contact & Booking</a>
-      </nav>
+ <header class="site-banner">
+  <div class="banner-content">
+    <img src="./images/logo.png" alt="Care Connect Logo" class="logo">
+    <div class="header-titles">
+    <h2>Care Connect</h2>
+    <h3>Care Without Borders</h3>
     </div>
-  </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact & Booking</a></li>
+      </ul>
+    </nav>
+    <p class="header-domain">
+      <a href="index.html">careconnecthealthcare.ca</a>
+    </p>
+    </div>
+</header>
   <main>
     <section class="hero">
       <h1>Our Services</h1>
       <p>Comprehensive overview of nursing and healthcare offerings: home visits, virtual care consultations, wellness programs, and care management support. Clear descriptions make choosing services easy.</p>
     </section>
 
-    <section class="services-intro">
-      <h2>Care Connect Healthcare Solutions</h2>
-      <p>At Care Connect Health, we offer a comprehensive range of nursing and healthcare services designed to meet the diverse needs of our clients. From in-home care to virtual consultations, our team of qualified professionals is committed to delivering accessible, compassionate, and professional healthcare to all communities.</p>
-    </section>
+<section class="services-table-section">
+  <h2>Care Connect Healthcare Solutions</h2>
+  <p>At Care Connect Health, we offer a comprehensive range of nursing and healthcare services designed to meet the diverse needs of our clients. Explore our services in the table below to find what suits your needs best.</p>
+  
+  <div class="table-wrapper">
+   <table class="services-table">
+    <thead>
+        <tr>
+            <th>Service</th>
+            <th>Description</th>
+            <th>Key Features</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="service-name" data-label="Service">
+                <span class="service-icon">🏥</span>
+                Home Visits & In-Home Nursing
+            </td>
+            <td data-label="Description">Professional healthcare services delivered in the comfort of your home. Our registered nurses provide comprehensive medical care with personalized attention.</td>
+            <td data-label="Key Features">
+                <ul class="feature-list">
+                    <li>Wound care</li>
+                    <li>Medication management</li>
+                    <li>Health assessments</li>
+                    <li>Chronic disease management</li>
+                </ul>
+            </td>
+            <td data-label="Action">
+                <a href="contact.html" class="service-cta">Learn More</a>
+            </td>
+        </tr>
 
-    <section class="services-grid">
-      <div class="service-card">
-        <div class="service-icon">🏥</div>
-        <h3>Home Visits & In-Home Nursing</h3>
-        <p>Our registered nurses provide professional healthcare services in the comfort of your home. Services include wound care, medication management, health assessments, and chronic disease management. We bring quality medical care directly to you, ensuring continuity and personalized attention.</p>
-        <a href="contact.html" class="service-cta">Learn More</a>
-      </div>
+        <tr>
+            <td class="service-name" data-label="Service">
+                <span class="service-icon">💻</span>
+                Virtual Care Consultations
+            </td>
+            <td data-label="Description">Access professional healthcare from anywhere with our secure virtual consultation services. Connect via video or phone for medical guidance.</td>
+            <td data-label="Key Features">
+                <ul class="feature-list">
+                    <li>Video consultations</li>
+                    <li>Health monitoring</li>
+                    <li>Prescription follow-ups</li>
+                    <li>Wellness guidance</li>
+                </ul>
+            </td>
+            <td data-label="Action">
+                <a href="contact.html" class="service-cta">Learn More</a>
+            </td>
+        </tr>
 
-      <div class="service-card">
-        <div class="service-icon">💻</div>
-        <h3>Virtual Care Consultations</h3>
-        <p>Access professional healthcare from anywhere with our secure virtual consultation services. Connect with our nurses and healthcare providers via video or phone for medical advice, health monitoring, prescription follow-ups, and wellness guidance. Perfect for busy schedules and remote accessibility.</p>
-        <a href="contact.html" class="service-cta">Learn More</a>
-      </div>
+        <tr>
+            <td class="service-name" data-label="Service">
+                <span class="service-icon">🧘</span>
+                Wellness Programs
+            </td>
+            <td data-label="Description">Comprehensive wellness programs designed to promote health and prevent disease. Empower yourself with personalized health solutions.</td>
+            <td data-label="Key Features">
+                <ul class="feature-list">
+                    <li>Health education</li>
+                    <li>Fitness coaching</li>
+                    <li>Nutrition guidance</li>
+                    <li>Preventive screenings</li>
+                </ul>
+            </td>
+            <td data-label="Action">
+                <a href="contact.html" class="service-cta">Learn More</a>
+            </td>
+        </tr>
 
-      <div class="service-card">
-        <div class="service-icon">🧘</div>
-        <h3>Wellness Programs</h3>
-        <p>Empower yourself with our comprehensive wellness programs designed to promote health and prevent disease. Offerings include health education, fitness coaching, nutrition guidance, stress management, and preventive health screenings. Our programs are tailored to individual and community needs.</p>
-        <a href="contact.html" class="service-cta">Learn More</a>
-      </div>
+        <tr>
+            <td class="service-name" data-label="Service">
+                <span class="service-icon">📋</span>
+                Care Management Support
+            </td>
+            <td data-label="Description">Navigate complex healthcare systems with confidence. Our care managers coordinate your medical care and advocate for your health needs.</td>
+            <td data-label="Key Features">
+                <ul class="feature-list">
+                    <li>Care coordination</li>
+                    <li>Prescription management</li>
+                    <li>Specialist referrals</li>
+                    <li>Provider collaboration</li>
+                </ul>
+            </td>
+            <td data-label="Action">
+                <a href="contact.html" class="service-cta">Learn More</a>
+            </td>
+        </tr>
 
-      <div class="service-card">
-        <div class="service-icon">📋</div>
-        <h3>Care Management Support</h3>
-        <p>Navigate complex healthcare systems with confidence. Our care managers coordinate your medical care, manage prescriptions, arrange specialist referrals, and ensure all healthcare providers are working together for your benefit. We advocate for your health needs every step of the way.</p>
-        <a href="contact.html" class="service-cta">Learn More</a>
-      </div>
+        <tr>
+            <td class="service-name" data-label="Service">
+                <span class="service-icon">👨‍⚕️</span>
+                Specialized Nursing Care
+            </td>
+            <td data-label="Description">Expert nursing services for complex health conditions. Each service is delivered by experienced nurses with specialized training.</td>
+            <td data-label="Key Features">
+                <ul class="feature-list">
+                    <li>Post-operative care</li>
+                    <li>Palliative care</li>
+                    <li>Long-term disease management</li>
+                    <li>Geriatric care</li>
+                </ul>
+            </td>
+            <td data-label="Action">
+                <a href="contact.html" class="service-cta">Learn More</a>
+            </td>
+        </tr>
 
-      <div class="service-card">
-        <div class="service-icon">👨‍⚕️</div>
-        <h3>Specialized Nursing Care</h3>
-        <p>Our team provides specialized nursing services including post-operative care, palliative care, long-term disease management, and geriatric care. Each service is delivered by experienced nurses with specialized training in their respective fields.</p>
-        <a href="contact.html" class="service-cta">Learn More</a>
-      </div>
+        <tr>
+            <td class="service-name" data-label="Service">
+                <span class="service-icon">📞</span>
+                Health Information & Support
+            </td>
+            <td data-label="Description">Get reliable health information and professional guidance from our knowledgeable healthcare team. Knowledge is power in managing your health.</td>
+            <td data-label="Key Features">
+                <ul class="feature-list">
+                    <li>Health condition education</li>
+                    <li>Treatment options guidance</li>
+                    <li>Medication information</li>
+                    <li>Health promotion</li>
+                </ul>
+            </td>
+            <td data-label="Action">
+                <a href="contact.html" class="service-cta">Learn More</a>
+            </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
 
-      <div class="service-card">
-        <div class="service-icon">📞</div>
-        <h3>Health Information & Support</h3>
-        <p>Get reliable health information and professional guidance from our knowledgeable healthcare team. We provide education on managing health conditions, understanding treatment options, medication information, and general health promotion. Knowledge is power in managing your health.</p>
-        <a href="contact.html" class="service-cta">Learn More</a>
-      </div>
-    </section>
 
     <section class="service-features">
       <h2>Why Choose Care Connect Services?</h2>
@@ -135,19 +225,25 @@
       <h2>Ready to Experience Care Connect Services?</h2>
       <p>Whether you need immediate care or want to learn more about our services, our team is here to help.</p>
       <a href="contact.html" class="cta-btn">Book an Appointment</a>
-      <a href="about.html" class="cta-btn">Meet Our Team</a>
+      <a href="about.html#team" class="cta-btn">Meet Our Team</a>
     </section>
   </main>
 
   <footer class="site-footer">
     <p>&copy; 2025 Care Connect Health | Care Without Borders</p>
+    <p>General Inquiries: | info@careconnecthealthcare.ca</p>
+    <p>Appointments: | appointments@careconnecthealthcare.ca</p>
+    <p>Customer Support: | support@careconnecthealthcare.ca</p>
   </footer>
+
   <nav class="bottom-nav">
-    <a href="index.html" class="nav-item">Home</a>
-    <a href="about.html" class="nav-item">About Us</a>
-    <a href="services.html" class="nav-item">Services</a>
-    <a href="resources.html" class="nav-item">Resources</a>
-    <a href="contact.html" class="nav-item">Contact &amp; Booking</a>
+    <ul>
+      <li><a href="index.html" class="nav-item">Home</a></li>
+      <li><a href="about.html" class="nav-item">About Us</a></li>
+      <li><a href="services.html" class="nav-item">Services</a></li>
+      <li><a href="resources.html" class="nav-item">Resources</a></li>
+      <li><a href="contact.html" class="nav-item">Contact &amp; Booking</a></li>
+    </ul>
   </nav>
 </body>
 </html>

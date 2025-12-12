@@ -9,21 +9,26 @@
 </head>
 <body>
   <header class="site-banner">
-    <div class="banner-content">
-      <img src="./images/logo.png" alt="Care Connect Logo" class="logo">
-      <div class="header-titles">
-      <h2>Care Connect</h2>
-      <h3>Care Without Borders</h3>
-      </div>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="services.html">Services</a>
-        <a href="resources.html">Resources</a>
-        <a href="contact.html">Contact & Booking</a>
-      </nav>
+  <div class="banner-content">
+    <img src="./images/logo.png" alt="Care Connect Logo" class="logo">
+    <div class="header-titles">
+    <h2>Care Connect</h2>
+    <h3>Care Without Borders</h3>
     </div>
-  </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact & Booking</a></li>
+      </ul>
+    </nav>
+    <p class="header-domain">
+      <a href="index.html">careconnecthealthcare.ca</a>
+    </p>
+  </div>
+</header>
   <main>
     <section class="hero">
       <h1>Contact & Booking</h1>
@@ -52,9 +57,9 @@
           <div class="contact-icon">📧</div>
           <h3>Email</h3>
           <p>Send us an email with your inquiry and we'll respond within 24 hours.</p>
-          <p class="contact-detail"><strong>General Inquiries:</strong><br>info@careconnect.health</p>
-          <p class="contact-detail"><strong>Appointments:</strong><br>appointments@careconnect.health</p>
-          <p class="contact-detail"><strong>Customer Support:</strong><br>support@careconnect.health</p>
+          <p class="contact-detail"><strong>General Inquiries:</strong><br>info@careconnecthealthcare.ca</p>
+          <p class="contact-detail"><strong>Appointments:</strong><br>appointments@careconnecthealthcare.ca</p>
+          <p class="contact-detail"><strong>Customer Support:</strong><br>support@careconnecthealthcare.ca</p>
         </div>
 
         
@@ -215,7 +220,7 @@
       </form>
     </section>
 
-    <section class="information-request-section">
+    <section class="information-request-section" id="requestInformation">
       <h2>Request Information</h2>
       <p>Interested in learning more about our services? Fill out the form below and we'll send you detailed information.</p>
 
@@ -281,50 +286,148 @@
       </form>
     </section>
 
-    <section class="location-section">
-      <h2>Our Locations</h2>
-      <p>Visit one of our care centers for in-person consultations and services. We're conveniently located to serve our communities.</p>
-      
-      <div class="locations-grid">
-        <div class="location-card">
-          <h3>Main Care Center</h3>
-          <p class="address">123 Healthcare Avenue<br>City, State 12345</p>
-          <p class="phone"><strong>Phone:</strong> (555) 123-4567</p>
-          <p class="hours">
-            <strong>Hours:</strong><br>
-            Monday - Friday: 8:00 AM - 6:00 PM<br>
-            Saturday: 9:00 AM - 2:00 PM<br>
-            Sunday: Closed
-          </p>
-          <p class="services"><strong>Services:</strong> All services available</p>
+    
+<section class="location-section" id="location">
+    <h2><span class="section-accent">Our</span> Locations</h2>
+    <p>Visit one of our care centers for in-person consultations and services. We're conveniently located to serve our communities.</p>
+    
+    <div class="table-wrapper">
+       
+<table class="services-table locations-table">
+    <thead>
+        <tr>
+            <th>Location</th>
+            <th>Address</th>
+            <th>Phone</th>
+            <th>Hours</th>
+            <th>Services</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="location-name" data-label="Location">Main Care Center</td>
+            <td data-label="Address">123 Healthcare Avenue<br>City, State 12345</td>
+            <td data-label="Phone"><a href="tel:5551234567">(555) 123-4567</a></td>
+            <td data-label="Hours">
+                Mon - Fri: 8:00 AM - 6:00 PM<br>
+                Sat: 9:00 AM - 2:00 PM<br>
+                Sun: Closed
+            </td>
+            <td data-label="Services">All services available</td>
+        </tr>
+        <tr>
+            <td class="location-name" data-label="Location">Community Health Office</td>
+            <td data-label="Address">456 Wellness Street<br>City, State 12345</td>
+            <td data-label="Phone"><a href="tel:5552345678">(555) 234-5678</a></td>
+            <td data-label="Hours">
+                Mon - Fri: 9:00 AM - 5:00 PM<br>
+                Sat: Closed<br>
+                Sun: Closed
+            </td>
+            <td data-label="Services">Consultations, wellness programs</td>
+        </tr>
+        <tr>
+            <td class="location-name" data-label="Location">Extended Care Clinic</td>
+            <td data-label="Address">789 Medical Lane<br>City, State 12345</td>
+            <td data-label="Phone"><a href="tel:5553456789">(555) 345-6789</a></td>
+            <td data-label="Hours">
+                Mon - Sat: 8:00 AM - 8:00 PM<br>
+                Sun: 10:00 AM - 4:00 PM
+            </td>
+            <td data-label="Services">Specialized nursing care, appointments</td>
+        </tr>
+    </tbody>
+</table>
+    </div>
+</section>
+
+<section class="location-section" id="directions">
+    <h2>Visit Our Main Care Center</h2>
+    <p>Find us easily with our interactive map and detailed directions.</p>
+
+    <div class="location-map-container">
+        
+        <div class="service-card map-card">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.0267127343905!2d-75.69166!3d45.41673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce04fd0ee3f72d%3A0x5b5b5b5b5b5b5b5b!2s123%20Healthcare%20Ave%2C%20Ottawa%2C%20ON!5e0!3m2!1sen!2sca!4v1234567890"
+                class="location-iframe"
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </div>
 
-        <div class="location-card">
-          <h3>Community Health Office</h3>
-          <p class="address">456 Wellness Street<br>City, State 12345</p>
-          <p class="phone"><strong>Phone:</strong> (555) 234-5678</p>
-          <p class="hours">
-            <strong>Hours:</strong><br>
-            Monday - Friday: 9:00 AM - 5:00 PM<br>
-            Saturday: Closed<br>
-            Sunday: Closed
-          </p>
-          <p class="services"><strong>Services:</strong> Consultations, wellness programs</p>
-        </div>
+        <div class="service-card directions-card">
+            <h3 class="directions-title">📍 Get Directions</h3>
+            
+            <div class="location-info">
+                <h4>Main Care Center</h4>
+                <p class="address">
+                    <strong>123 Healthcare Avenue</strong><br>
+                    Ottawa, Ontario 12345<br>
+                    Canada
+                </p>
+            </div>
 
-        <div class="location-card">
-          <h3>Extended Care Clinic</h3>
-          <p class="address">789 Medical Lane<br>City, State 12345</p>
-          <p class="phone"><strong>Phone:</strong> (555) 345-6789</p>
-          <p class="hours">
-            <strong>Hours:</strong><br>
-            Monday - Saturday: 8:00 AM - 8:00 PM<br>
-            Sunday: 10:00 AM - 4:00 PM
-          </p>
-          <p class="services"><strong>Services:</strong> Specialized nursing care, appointments</p>
+            <div class="hours-box">
+                <h4>⏰ Hours of Operation</h4>
+                <ul class="hours-list">
+                    <li>Monday - Friday: 8:00 AM - 6:00 PM</li>
+                    <li>Saturday: 9:00 AM - 2:00 PM</li>
+                    <li>Sunday: Closed</li>
+                </ul>
+            </div>
+
+            <div class="contact-box">
+                <h4>📞 Contact</h4>
+                <ul class="contact-list">
+                    <li>
+                        <a href="tel:+15551234567" class="contact-link">
+                            📱 (555) 123-4567
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:info@careconnect.health" class="contact-link">
+                            ✉️ info@careconnecthealthcare.ca
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <a href="https://www.google.com/maps/search/123+Healthcare+Avenue,+Ottawa,+Ontario" target="_blank" rel="noopener noreferrer" class="cta-btn directions-btn">
+                Get Directions →
+            </a>
         </div>
-      </div>
-    </section>
+    </div>
+
+    <div class="locations-grid-section">
+        <h3>Other Locations</h3>
+        <div class="locations-grid">
+            
+            <div class="location-card">
+                <h4>Community Health Office</h4>
+                <p class="location-address">
+                    456 Wellness Street<br>
+                    Ottawa, Ontario
+                </p>
+                <a href="tel:+15552345678" class="contact-link">
+                     (555) 234-5678
+                </a>
+            </div>
+
+            <div class="location-card">
+                <h4>Extended Care Clinic</h4>
+                <p class="location-address">
+                    789 Medical Lane<br>
+                    Ottawa, Ontario
+                </p>
+                <a href="tel:+15553456789" class="contact-link">
+                     (555) 345-6789
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
 
     <section class="faq-contact">
       <h2>Common Questions</h2>
@@ -361,17 +464,21 @@
 
   <footer class="site-footer">
     <p>&copy; 2025 Care Connect Health | Care Without Borders</p>
+    <p>General Inquiries: | info@careconnecthealthcare.ca</p>
+    <p>Appointments: | appointments@careconnecthealthcare.ca</p>
+    <p>Customer Support: | support@careconnecthealthcare.ca</p>
   </footer>
   <nav class="bottom-nav">
-    <a href="index.html" class="nav-item">Home</a>
-    <a href="about.html" class="nav-item">About Us</a>
-    <a href="services.html" class="nav-item">Services</a>
-    <a href="resources.html" class="nav-item">Resources</a>
-    <a href="contact.html" class="nav-item">Contact &amp; Booking</a>
+    <ul>
+      <li><a href="index.html" class="nav-item">Home</a></li>
+      <li><a href="about.html" class="nav-item">About Us</a></li>
+      <li><a href="services.html" class="nav-item">Services</a></li>
+      <li><a href="resources.html" class="nav-item">Resources</a></li>
+      <li><a href="contact.html" class="nav-item">Contact &amp; Booking</a></li>
+    </ul>
   </nav>
 
   <script>
-    // Show/hide conditional form fields
     const providerPreferenceCheckbox = document.getElementById('provider-preference');
     const providerPreferenceField = document.getElementById('providerPreferenceField');
     
@@ -390,7 +497,6 @@
       });
     }
 
-    // Form submission handling
     document.getElementById('appointmentForm').addEventListener('submit', function(e) {
       e.preventDefault();
       alert('Thank you for your booking request! We will confirm your appointment within 24 hours.');
